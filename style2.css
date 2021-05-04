@@ -1,28 +1,36 @@
 /*RESPONSIVE*/
 
 @media (max-width:699px){
-    .menu{
+    #menu{
         width: 200px;
         height: 250px;
-        top: 0;
-        left: 0;
+        position: absolute;
+        margin-left: -70%;
         background-color: brown;
         box-shadow: 1px 1px 10px 3px #474747;
-        color: transparent;
         display: flex;
         flex-direction: column;
         padding: 0 50px;
-        list-style: none;
+        z-index: 1;
+        transition: all 5s;
      
     }
-    img{
-        width: 100px;
-        height: 100px;
-        object-fit: cover;
-        overflow: hidden;
-        border: 1px solid black;
+    .menu li{
+        list-style: none;
+        color: white;
 
     }
+   a {
+       color: white;
+       text-decoration: none;
+       transition: all 3s;
+   }
+   a:hover{
+    font-size: 18px;
+    font-weight: 900;
+    width: 200px;
+   }
+   
     #boton-menu{
         display: none;
     }
@@ -31,6 +39,7 @@
         width: 30px;
         height: 30px;
         padding: 5px;
+        border: 3px solid brown;
     }
     header label img:hover{
         background-color: brown;
@@ -48,15 +57,26 @@
   
  
     #productos{
+        position: relative;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 1px;
+        gap: 50px;
         justify-items: center;
     }
+
+   #boton-menu:checked ~ #menu {
+       margin-left: 0;
+
+   }
 }
 
 /* GENERAL*/
+ .foto:hover{
+    transform: scale(1.5);
+    border: 5px solid brown;
+}
+
     .somos_contenido, .estamos_comtenido{
        filter: none;
        width: 300px;
@@ -86,6 +106,29 @@
         padding-bottom: 10px;
         text-decoration: underline;
     }
+    img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        overflow: hidden;
+        border: 1px solid black;
+
+    }
+    .volver{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: 3px solid brown;
+    }
+    .volver img{
+        width: 50px;
+        height: 50px;
+    }
+    .volver:hover{
+        background-color: brown;
+    }
+    
 /*AREA DE CONTACTO*/
  
 #contacto, .mapa{
@@ -214,9 +257,6 @@ a:hover{
     object-fit: cover;
     overflow: hidden;
     border: 1px solid black;
-}
-.foto:hover{
-    transform: scale(1.5);
 }
 
 .uno{
