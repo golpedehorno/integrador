@@ -1,0 +1,270 @@
+/*RESPONSIVE*/
+
+@media (max-width:699px){
+    .menu{
+        width: 200px;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-color: brown;
+        box-shadow: 1px 1px 10px 3px #474747;
+        color: transparent;
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        list-style: none;
+     
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        overflow: hidden;
+        border: 1px solid black;
+
+    }
+    #boton-menu{
+        display: none;
+    }
+    header label img{
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    header label img:hover{
+        background-color: brown;
+        cursor: pointer;
+    }
+   
+    .menu li {
+        border-bottom: 1px solid white;
+        line-height: 50px;
+        text-decoration: none;
+        color: white;
+    
+    }
+
+  
+ 
+    #productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1px;
+        justify-items: center;
+    }
+}
+
+/* GENERAL*/
+    .somos_contenido, .estamos_comtenido{
+       filter: none;
+       width: 300px;
+       margin: 100px auto;
+       background-color: white;
+       padding: 50px;
+       opacity: 1;
+       color: brown !important;
+       font-size: 15px;
+    }
+    #somos{
+        background-image: url("IMG/somos.jpg");
+        filter: grayscale(1);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #estamos{
+        background-image: url("IMG/estamos.jpg");
+        filter: grayscale(1);
+    }
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        padding-bottom: 10px;
+        text-decoration: underline;
+    }
+/*AREA DE CONTACTO*/
+ 
+#contacto, .mapa{
+    width: 300px;
+    height: 600px;
+    background-color: brown;
+    border-radius: 20px;
+    color: white;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 3px #474747;
+}
+.mapa{
+    width: 100%px;
+}
+.google{
+    width: 100%;
+}
+.contenedor_form {
+ margin: 50px auto;
+
+}
+
+.contactanos{
+    text-transform: uppercase;
+}
+
+label, input{
+    display: block;
+    margin: 10px;
+}
+ input{
+   text-decoration: unset;
+   margin: 5px auto;
+   padding: auto;
+   align-items: center;
+   line-height: 25px;
+   border-radius: 10px;
+   width: 200px;
+}
+textarea{
+    display: block;
+    width: 200px;
+    resize: none;
+    margin: auto;
+    border-radius: 10px;
+}
+.boton_enviar{
+    display: block;
+    background-color: white;
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    margin: 10px auto;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.boton_enviar:hover{
+    height: 60px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.mapa h2, .contactanos{
+    color: white;
+}
+.boton{
+    background-color: brown;
+    color: white;
+    line-height: 30px;
+    margin: 50px 100px;
+    border-radius: 10px;
+}
+
+ /*COMPU*/
+@media (min-width:600px){
+
+.menu{
+    width: 13%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    box-shadow: 1px 1px 10px 3px #474747;
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.menu:hover{
+    color:white;
+}
+li{
+    height: 25%;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+   
+    color: white;
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+}
+#productos{
+    width: 76%;
+    height: 1000px;
+    margin-left: 21%; 
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+#somos, #estamos{
+    margin-left: 21%; 
+    width: 80%;
+}
+
+.foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 1px solid black;
+}
+.foto:hover{
+    transform: scale(1.5);
+}
+
+.uno{
+    grid-row:1/3 ;
+}
+.dos{
+    grid-row: 1/2;
+}
+.tres{
+grid-row: 2/3;
+}
+.cuatro{
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+.cinco{
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+.seis{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.siete{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.ocho{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.ocho{
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+
+/*AREA DE CONTACTO*/
+.contenedor_contacto{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 21%;
+}
+.boton{
+    margin-left: 50%;
+}
+#cordobes{
+    margin-left: 21%; 
+    border: 5px solid brown;
+    padding: 5px;
+}
+}
