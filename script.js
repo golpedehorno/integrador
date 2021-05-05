@@ -1,14 +1,23 @@
-var nombre= prompt("Cual es tu nombre?")
-alert("Bienvenido a Aranjez "+nombre+ " !")
+var nombre= prompt("¿Cuál es tu nombre?")
+alert("Bienvenido a Aranjuez "+nombre+ "!")
 
 
 //BOTON VER PRODUCTOS
-var productos=[" Panes"," Facturas"," Criollos"," Cafés"," Licuados"," Tostados"," Tortas"," Tartas"," Menues"];
+var productos=[" Panes"," Facturas"," Criollos"," Cafés"," Licuados"," Tostados"," Tortas"," Tartas"," Menues","Y mucho más..."];
         
         function ver(){
 
             for(i=0;i<productos.length;i++){
-                alert("Nuestros productos son: " + productos[i]+ "...");
+                //alert("Nuestros productos son: " + productos[i]+ "...");
+
+                var elemento = document.createElement("li");
+                var lista= document.createTextNode(productos[i])
+                var referencia = document.createAttribute("href");
+                referencia.value= "https://www.lipsum.com"
+                elemento.appendChild(lista);
+                
+                var listaCreada = document.getElementById("lista");
+                listaCreada.appendChild(elemento);
             }
          
         }
@@ -36,3 +45,10 @@ var productos=[" Panes"," Facturas"," Criollos"," Cafés"," Licuados"," Tostados
   }
   
  
+//COLOR DE ROSA
+var body= document.getElementById("body")
+function vivir(){
+
+    body.style.background="pink"
+
+}

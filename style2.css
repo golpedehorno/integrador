@@ -1,82 +1,49 @@
-/*RESPONSIVE*/
-
-@media (max-width:699px){
-    #menu{
-        width: 200px;
-        height: 250px;
-        position: absolute;
-        margin-left: -70%;
-        background-color: brown;
-        box-shadow: 1px 1px 10px 3px #474747;
-        display: flex;
-        flex-direction: column;
-        padding: 0 50px;
-        z-index: 1;
-        transition: all 5s;
-     
-    }
-    .menu li{
-        list-style: none;
-        color: white;
-
-    }
-   a {
-       color: white;
-       text-decoration: none;
-       transition: all 3s;
-   }
-   a:hover{
-    font-size: 18px;
-    font-weight: 900;
-    width: 200px;
-   }
-   
-    #boton-menu{
-        display: none;
-    }
-    header label img{
-        display: block;
-        width: 30px;
-        height: 30px;
-        padding: 5px;
-        border: 3px solid brown;
-    }
-    header label img:hover{
-        background-color: brown;
-        cursor: pointer;
-    }
-   
-    .menu li {
-        border-bottom: 1px solid white;
-        line-height: 50px;
-        text-decoration: none;
-        color: white;
-    
-    }
-
-  
- 
-    #productos{
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 50px;
-        justify-items: center;
-    }
-
-   #boton-menu:checked ~ #menu {
-       margin-left: 0;
-
-   }
+*{
+    margin: 0;
+    padding: 0;
 }
 
 /* GENERAL*/
- .foto:hover{
-    transform: scale(1.5);
-    border: 5px solid brown;
-}
+    .boton{
+    margin: auto;
+    padding: 15px;
+    display: block;
+    width: 300px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: brown;
+    color: white;
+    line-height: 30px;
+    margin: 50px 100px;
+    border-radius: 10px;
+    }
 
+    #boton-menu{
+    display: none;
+    }
+
+    .foto:hover{
+    transform: scale(1.2);
+    border: 5px solid brown;
+    }
+
+    .lista-productos{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+    color: white;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px;
+
+    }
+
+    li{
+    list-style: none;
+    }
     .somos_contenido, .estamos_comtenido{
        filter: none;
        width: 300px;
@@ -115,23 +82,27 @@
 
     }
     .volver{
-        display: block;
         position: fixed;
         bottom: 0;
         right: 0;
         border: 3px solid brown;
+        transition: all 5s;
+        
     }
     .volver img{
         width: 50px;
         height: 50px;
     }
+   
     .volver:hover{
         background-color: brown;
+        width: 50px;
+        height: 50px;
     }
     
-/*AREA DE CONTACTO*/
+    /*AREA DE CONTACTO*/
  
-#contacto, .mapa{
+    #contacto, .mapa{
     width: 300px;
     height: 600px;
     background-color: brown;
@@ -140,27 +111,27 @@
     margin: 100px auto;
     padding: 20px;
     box-shadow: 1px 1px 10px 3px #474747;
-}
-.mapa{
+    }
+    .mapa{
     width: 100%px;
-}
-.google{
+    }
+    .google{
     width: 100%;
-}
-.contenedor_form {
- margin: 50px auto;
+    }
+    .contenedor_form {
+    margin: 50px auto;
 
-}
+    }
 
-.contactanos{
+    .contactanos{
     text-transform: uppercase;
-}
+    }
 
-label, input{
+    label, input{
     display: block;
     margin: 10px;
-}
- input{
+    }
+     input{
    text-decoration: unset;
    margin: 5px auto;
    padding: auto;
@@ -168,15 +139,15 @@ label, input{
    line-height: 25px;
    border-radius: 10px;
    width: 200px;
-}
-textarea{
+    }
+    textarea{
     display: block;
     width: 200px;
     resize: none;
     margin: auto;
     border-radius: 10px;
-}
-.boton_enviar{
+    }
+    .boton_enviar{
     display: block;
     background-color: white;
     height: 30px;
@@ -185,29 +156,95 @@ textarea{
     margin: 10px auto;
     text-transform: uppercase;
     font-size: 12px;
-}
-.boton_enviar:hover{
+    }
+    .boton_enviar:hover{
     height: 60px;
     width: 180px;
     font-weight: bold;
     font-size: 15px;
-}
-.mapa h2, .contactanos{
+    }
+    .mapa h2, .contactanos{
     color: white;
+    }
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width:699px){
+    #menu{
+        width: 200px;
+        height: 250px;
+        position: absolute;
+        margin-left: -90%;
+        background-color: brown;
+        box-shadow: 1px 1px 10px 3px #474747;
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        z-index: 1;
+        transition: all 5s;
+     
+    }
+    .menu li{
+        list-style: none;
+        color: white;
+
+    }
+   a {
+       color: white;
+       text-decoration: none;
+       transition: all 3s;
+   }
+   a:hover{
+    font-size: 18px;
+    font-weight: 900;
+    width: 200px;
+   }
+   
+   
+    header label img{
+        display: block;
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        border: 3px solid brown;
+        transition: all 2s;
+    }
+    header label img:hover{
+        background-color: brown;
+        cursor: pointer;
+    }
+   
+    .menu li {
+        border-bottom: 1px solid white;
+        line-height: 50px;
+        text-decoration: none;
+        color: white;
+    
+    }
+
+    #productos{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 50px;
+        justify-items: center;
+    }
+
+   #boton-menu:checked ~ #menu {
+       margin-left: 0;
+
+   }
 }
-.boton{
-    background-color: brown;
-    color: white;
-    line-height: 30px;
-    margin: 50px 100px;
-    border-radius: 10px;
-}
+
 
  /*COMPU*/
 @media (min-width:600px){
 
 .menu{
-    width: 13%;
+    width: 15%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -217,7 +254,8 @@ textarea{
     color: transparent;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 20px;
+    
 }
 .menu:hover{
     color:white;
@@ -225,16 +263,22 @@ textarea{
 li{
     height: 25%;
     text-decoration: none;
+    
 }
 
 a{
     text-decoration: none;
-   
     color: white;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+    line-height: 100px;
+    padding: 10px;
+    transition: all 0.5s;
 }
 
 a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 0.2px solid white;
+    font-size: 22px;
 }
 #productos{
     width: 76%;
@@ -244,8 +288,10 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    padding: 15px;
+    margin-top: -120px;
+    
 }
+
 #somos, #estamos{
     margin-left: 21%; 
     width: 80%;
@@ -257,6 +303,7 @@ a:hover{
     object-fit: cover;
     overflow: hidden;
     border: 1px solid black;
+    transition: all 3s;
 }
 
 .uno{
@@ -293,15 +340,18 @@ grid-row: 2/3;
     grid-row: 4/5;
 }
 
+.boton{
+    margin-left: 50%;
+}
+
+
 /*AREA DE CONTACTO*/
 .contenedor_contacto{
     display: flex;
     flex-direction: row-reverse;
     margin-left: 21%;
 }
-.boton{
-    margin-left: 50%;
-}
+
 #cordobes{
     margin-left: 21%; 
     border: 5px solid brown;
