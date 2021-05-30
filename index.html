@@ -6,32 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aranjuez</title>
     <link rel="stylesheet" href="style2.css">
-   
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body id="body">
     <header >
         <input type="checkbox" id="boton-menu">
-        <label for="boton-menu"> <img src="IMG/lista.png" alt=""></label>
+        <label for="boton-menu"> <img src="IMG/lista.png" alt="" class="imagen-menu"></label>
         <nav id="menu">
             <ul class="menu">
                 <li> <a href="#productos">PRODUCTOS</a> </li>
                 <li> <a href="#somos">QUIENES SOMOS</a> </li>
                 <li> <a href="#estamos"> DONDE ESTAMOS  </a></li>
                 <li> <a href="#contacto">CONTACTO </a> </li>
+                <div>
+
+                </div>
+                <li class="redes">  
+                    <a href="https://instagram.com/cafearanjuez?igshid=3g0lpfms73s7" target="_blank"><img src="img/INSTAGRAM.png" alt="" class="redes_img"></a>
+                    <a href="" target="_blank"><img src="img/FACEBOOK.png" alt="" class="redes_img"></a> 
+                    <a href="https://api.whatsapp.com/send/?phone=5493513514567&text&app_absent=0" target="_blank"><img src="img/WHATSAPP.png" alt="" class="redes_img"></a>
+                </li>
+
+                    
+                <img src="img/LOGOARANJUEZ.png" alt="" class="logo">
             </ul>
+            
         </nav>
     </header>
 
     <div id="productos">
-        <img src="IMG/1.jpg" alt="" class="foto uno">
-        <img src="IMG/2.jpg" alt="" class="foto dos">
-        <img src="IMG/3.jpg" alt="" class="foto tres">
-        <img src="IMG/4.jpg" alt="" class="foto cuatro">
-        <img src="IMG/5.jpg" alt="" class="foto cinco">
-        <img src="IMG/6.jpg" alt="" class="foto seis">
-        <img src="IMG/7.jpg" alt="" class="foto siete">
-        <img src="IMG/8.jpg" alt="" class="foto ocho">
-        <img src="IMG/9.jpg" alt="" class="foto nueve">
+        <div class="foto uno"> <a href="IMG/1.jpg"  data-lightbox="productos" data-title="Panes de todas las clases, recién salidos del horno."> <img src="IMG/1.jpg" alt="" class="fotooo"> </a></div>
+        <div class="foto dos"><a href="IMG/2.jpg"  data-lightbox="productos" data-title="Medialunas, facturas con crema, dulce de membrillo y dulce de leche están esperándote"><img src="IMG/2.jpg" alt="" class="fotooo"> </a> </div>
+        <div class="foto tres"><a href="IMG/3.jpg"  data-lightbox="productos" data-title="Criollitos comunes y de hojaldre. La panificación mas caracteristica de Córdoba"><img src="IMG/3.jpg" alt="" class="fotooo"> </a></div>
+        <div class="foto cuatro"><a href="IMG/4.jpg"  data-lightbox="productos" data-title="Café en todas sus presentaciones (Cortado, lagrima, con crema...) y toda la variedad de Té que te imagines."><img src="IMG/4.jpg" alt="" class="fotooo"> </a></div>
+        <div class="foto cinco"><a href="IMG/5.jpg"  data-lightbox="productos" data-title="Licuados con fruta fresca y gaseosas, para que complementes todo lo rico que quieras comer."><img src="IMG/5.jpg" alt="" class="fotooo"> </a></div>
+       <div class="foto seis"><a href="IMG/6.jpg" data-lightbox="productos" data-title="Tostados y sandwichs gourmete que te encantarán."><img src="IMG/6.jpg" alt="" class="fotooo"> </a></div>
+       <div class="foto siete"><a href="IMG/7.jpg"  data-lightbox="productos" data-title="Tortas y especialidades para disfrutar."><img src="IMG/7.jpg" alt=""class="fotooo" > </a></div>
+       <div class="foto ocho"><a href="IMG/8.jpg"  data-lightbox="productos" data-title="Tartas de todas las variedades (jamón y queso, verduras, choclo...)"><img src="IMG/8.jpg" alt="" class="fotooo"> </a></div>
+       <div  class="foto nueve"><a href="IMG/9.jpg" data-lightbox="productos" data-title="Menues varios para que aproveches al medio dia."><img src="IMG/9.jpg" alt="" class="fotooo"></a></div>
+       
     </div>
 
     <div class="contenedor-lista">
@@ -44,10 +57,11 @@
  
     <div id="somos">
        <div class="somos_contenido"> 
-        <H2>quienes somos</H2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quaerat nihil ex commodi aliquid in asperiores vitae consequatur nam ut enim omnis, quam temporibus modi explicabo doloremque vel maiores. Numquam?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut dolore natus culpa suscipit accusamus iure earum, quis ab sunt cum labore perferendis provident a, eveniet eaque ex non alias.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, illum. Molestias iusto voluptas distinctio! Inventore neque ratione ab numquam, perferendis debitis aut iusto ipsum voluptatem labore illum quas repellat earum!
+        <H2>¿quiénes somos?</H2>
+        <p> Allá por el 2008 nació esta idea de convertir un sueño en realidad. Con el ímpetu de una marca reconocida de franquicias y el apoyo de toda mi familia, arranqué este desafio que me llevaría a enamorarme de la Gastronomia.
+            El nombre y los colores cambiaron, pero la impronta y excelencia siguen intactos. <br>
+            <br>
+            Mi nombre es Hernan y junto a Soledad y a un gran equipo de colaboradores abrimos todos los dias (de Lunes a Lunes) las puerta de este hermoso hogar que hemos denominado: ARANJUEZ!. 
         </p>
 
        </div>
@@ -55,13 +69,14 @@
     </div>
 
     <div id="estamos">
-        <div class="estamos_comtenido">
-            <H2>donde estamos</H2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, quaerat nihil ex commodi aliquid in asperiores vitae consequatur nam ut enim omnis, quam temporibus modi explicabo doloremque vel maiores. Numquam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut dolore natus culpa suscipit accusamus iure earum, quis ab sunt cum labore perferendis provident a, eveniet eaque ex non alias.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, illum. Molestias iusto voluptas distinctio! Inventore neque ratione ab numquam, perferendis debitis aut iusto ipsum voluptatem labore illum quas repellat earum!
-        </div>
-       
+            <div class="estamos_contenido">
+                <H2>¿dónde estamos?</H2>
+                <p>
+                    En la icónica esquina de Dean Funes y Figueroa Alcorta, a orillas de la cañada podrás encontrarnos. Aquel rio que en antaños desbordaba Córdoba, con sus árboles caracteristicos (Tipas) son el paisaje soñado que encontrarás trás nuestros ventanales o en la hermosa vereda que rodea esta pintoresca esquina. Si sos de Córdaba ya sabrás de lo que te hablo, si no lo sos, venir a visitarnos es una buena excusa para conocer las raices de nuestro lugar. <br>
+                    <br>
+                    Porque venimos de España y aprendimos a domar a capa y tesón al toro de los sabores y del buen pasar. Aqui estamos para sorprenderte con el café mas espumoso y los criollos mas calentitos, recién salidos del horno para que arranques una hermosa mañana. Aqui estamos para que tus medios dias tengan los mejores menues, y las tardes tengan esas meriendas que coronen tu dia laboral, tus findes de paseos. Aqui estamos... esperándote! vení, no te vas a arrepentir!
+                </p>
+            </div>
     </div>
    
     <div id="cordobes"></div>
@@ -75,14 +90,16 @@
                   
                 <div class="contenedor_form">
                         <label for="nombre">Tu Nombre: </label>
-                        <input type="text">
+                        <input type="text" id="nombre" name="nombre" placeholder="¿Cuál es tu nombre?" required>
                         <label for="mail">Tu Email: </label>
-                        <input type="text">
+                        <input type="email" id="mail" name="mail" placeholder="¿Cuál es tu Email?" required>
                         <label for="telefono">Tu Teléfono: </label>
-                        <input type="text">
+                        <input type="number" id="telefono" name="telefono" placeholder="¿Cuál es tu telefono?">
+                        <label for="reserva">¿Cuándo querés reservar?: </label>
+                        <input type="date" id="reserva" name="reserva">
                         <label for="mensje">Tu Mensaje: </label>
                         <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-                        <input type="submit" value="Envia Mensaje" class="boton_enviar" onclick="mensajeEnviado()">
+                        <input type="submit" value="Enviar Mensaje" class="boton_enviar" onclick="enviar()">
                      
                            
                 </div>           
@@ -104,5 +121,7 @@
    </footer>
     
    <script src="script.js"></script>
+   <script src="js/lightbox-plus-jquery.js"></script>
+   
 </body>
 </html>

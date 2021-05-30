@@ -40,9 +40,10 @@ var productos=[" Panes"," Facturas"," Criollos"," Cafés"," Licuados"," Tostados
 
   //ENVIAR MENSAJE
    
-  function mensajeEnviado(){
-      alert("Mensaje enviado, nos comunicaremos a la brevedad. Gracias!")
-  }
+//   form.addEventListener("submit", function(enviar){
+//     alert("Su solicitud fue enviada con éxito, a la brevedad nos comunicaremos. Muchas gracias!")
+   
+// })
   
  
 //COLOR DE ROSA
@@ -52,3 +53,54 @@ function vivir(){
     body.style.background="pink"
 
 }
+
+//VALIDACION FORMULARIO
+
+var nombre = document.getElementById("nombre")
+var telefono = document.getElementById("telefono")
+ 
+// form.addEventListener("submit", function(event){
+//     alert("Su solicitud fue enviada con éxito, a la brevedad nos comunicaremos. Muchas gracias!")
+   
+// })
+
+function validarDatos(){
+    nombre.addEventListener("input",validarNombre)
+    telefono.addEventListener("input",validarTelefono)
+    
+    validarNombre()
+    validarTelefono()
+}
+
+function validarNombre(){
+
+    if(nombre.value==""){
+        nombre.setCustomValidity("Ingresá tu nombre")
+        
+    }else{
+      if(isNaN(nombre.value)){
+         if(nombre.value.length<4){
+          nombre.setCustomValidity("Poné al menos cuatro letras a tu nombre...")
+          nombre.style.background="rgb(245, 81, 81)"
+         } else{
+          nombre.setCustomValidity("")
+          nombre.style.background=""
+          }
+       }else{
+        nombre.setCustomValidity("Ingresá letras")}    
+    }
+      
+  }
+
+  
+
+function validarTelefono(){
+    if(telefono.value.length==10){
+        telefono.setCustomValidity("")
+    } else{
+        telefono.setCustomValidity("Deben ser 10 digitos. Quitar el cero de la caracteristica y el 15 del numero del celular. Ej: 3515555555")
+    }
+}
+
+
+window.addEventListener("load", validarDatos)
