@@ -104,3 +104,35 @@ function validarTelefono(){
 
 
 window.addEventListener("load", validarDatos)
+
+//PARA VER MAS INFO
+var verMasInfo= document.getElementById("verMasInfo")
+var masInfo= document.getElementById("masTexto")
+var verMenosInfo=document.getElementById("verMenosInfo")
+
+function verMas(){
+masInfo.style.display= "block"
+verMasInfo.style.display="none"
+verMenosInfo.style.display="block"
+}
+
+function verMenos(){
+    masInfo.style.display= "none"
+    verMasInfo.style.display="block"
+    verMenosInfo.style.display="none"
+    }
+
+//AMPLIAR MAPA
+
+var google=document.getElementById("mapa")
+var contacto=document.getElementById("contacto")
+
+function ampliarDiv(div){
+div.style.width="800px"
+}
+
+function disminuirDiv(div){
+    div.style.width="300px"
+}
+
+

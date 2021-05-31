@@ -109,9 +109,16 @@
         height: 50px;
     }
     
+    .info{
+        cursor: pointer;
+        color: brown;
+        font-weight: bold;
+        padding: 10px;
+    }
+
     /*AREA DE CONTACTO*/
  
-    #contacto, .mapa{
+    #contacto, #mapa{
     width: 300px;
     height: 600px;
     background-color: brown;
@@ -121,12 +128,12 @@
     padding: 20px;
     box-shadow: 1px 1px 10px 3px #474747;
     }
-    .mapa{
-    width: 100%px;
-    }
+  
     .google{
     width: 100%;
+    padding:20px 0;
     }
+    
     .contenedor_form {
     margin: 50px auto;
 
@@ -173,7 +180,7 @@
     font-weight: bold;
     font-size: 15px;
     }
-    .mapa h2, .contactanos{
+    #mapa h2, .contactanos{
     color: white;
     }
 
@@ -268,6 +275,10 @@
         justify-items: center;
     }
 
+    .fotooo{
+        height: 50px;
+    }
+
    #boton-menu:checked ~ #menu {
        margin-left: 0;
 
@@ -342,7 +353,6 @@ a:hover{
     width: 76%;
     height: 100vh;
     margin-left: 21%; 
-    border: 1px solid black;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
@@ -389,19 +399,21 @@ grid-row: 2/3;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-    border: 1px solid yellow;
     transition: all 3s;
 }
 
 .foto img{
     width: 100%;
+    height: 100%;
     background-size: cover;
     overflow: hidden;
-    border: 1px solid green;
+    border: none;
+    box-shadow: 1px 1px 10px 3px #474747;
 }
 #somos, #estamos{
     margin-left: 21%; 
     width: 76%;
+    box-shadow: 1px 1px 10px 3px #474747;
 }
 .boton{
     margin-left: 50%;

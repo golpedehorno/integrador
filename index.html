@@ -73,8 +73,11 @@
                 <H2>¿dónde estamos?</H2>
                 <p>
                     En la icónica esquina de Dean Funes y Figueroa Alcorta, a orillas de la cañada podrás encontrarnos. Aquel rio que en antaños desbordaba Córdoba, con sus árboles caracteristicos (Tipas) son el paisaje soñado que encontrarás trás nuestros ventanales o en la hermosa vereda que rodea esta pintoresca esquina. Si sos de Córdaba ya sabrás de lo que te hablo, si no lo sos, venir a visitarnos es una buena excusa para conocer las raices de nuestro lugar. <br>
-                    <br>
-                    Porque venimos de España y aprendimos a domar a capa y tesón al toro de los sabores y del buen pasar. Aqui estamos para sorprenderte con el café mas espumoso y los criollos mas calentitos, recién salidos del horno para que arranques una hermosa mañana. Aqui estamos para que tus medios dias tengan los mejores menues, y las tardes tengan esas meriendas que coronen tu dia laboral, tus findes de paseos. Aqui estamos... esperándote! vení, no te vas a arrepentir!
+                    <br><a id="verMasInfo" class="info"  onclick="verMas()" style="display: block;">+ info</a>
+                     <span id="masTexto" style="display: none;">
+                        Porque venimos de España y aprendimos a domar a capa y tesón al toro de los sabores y del buen pasar. Aqui estamos para sorprenderte con el café mas espumoso y los criollos mas calentitos, recién salidos del horno para que arranques una hermosa mañana. Aqui estamos para que tus medios dias tengan los mejores menues, y las tardes tengan esas meriendas que coronen tu dia laboral, tus findes de paseos. Aqui estamos... esperándote! vení, no te vas a arrepentir!
+                    </span><a id="verMenosInfo" class="info" onclick="verMenos()" style="display: none;"> - Info </a>
+                    
                 </p>
             </div>
     </div>
@@ -83,12 +86,12 @@
 
     <div class="contenedor_contacto">
 
-         <div id="contacto">
+         <div id="contacto" onmouseover="ampliarDiv(contacto)" onmouseout="disminuirDiv(contacto)">
             <form action="">
                 <h2 class="contactanos"> Contactanos</h3>
                 <p> *Reservá tu lugar o consultanos para tu evento</p>
                   
-                <div class="contenedor_form">
+                <div class="contenedor_form" id="contenedor_form" >
                         <label for="nombre">Tu Nombre: </label>
                         <input type="text" id="nombre" name="nombre" placeholder="¿Cuál es tu nombre?" required>
                         <label for="mail">Tu Email: </label>
@@ -106,9 +109,9 @@
              </form>
           </div>
          
-        <div class="mapa">
+        <div id="mapa" onmouseover="ampliarDiv(mapa)" onmouseout="disminuirDiv(mapa)" >
             <h2>visitanos</h2>
-            <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.009628346596!2d-64.19387478515827!3d-31.41386080327251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987f7db28c75%3A0xefb6daba462c075f!2sAv.%20Figueroa%20Alcorta%2010%2C%20X5000KGP%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1619445692992!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="google"  id="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.009628346596!2d-64.19387478515827!3d-31.41386080327251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987f7db28c75%3A0xefb6daba462c075f!2sAv.%20Figueroa%20Alcorta%2010%2C%20X5000KGP%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1619445692992!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 
